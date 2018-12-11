@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quantity View</title>
+</head>
+<body>
+  <h1>My stuff:</h1>
+  <ul>
+    <% quantities.forEach( item => { %>
+      <li>
+        <p>Item name: <%= item.name %></p>
+        <p>Inventory count: <%= item.quantity %></p>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
+
+<!-- Only wrap the ejs components -->
